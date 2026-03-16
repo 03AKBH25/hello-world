@@ -1,0 +1,150 @@
+@import "tailwindcss";
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* ─── scene ─────────────────────────────────────────── */
+.carousel {
+  width: 100%;
+  height: 620px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1500px;
+  position: relative;
+  overflow: visible;
+}
+
+/* ─── shared track base ──────────────────────────────── */
+.carousel-track,
+.carousel-track-refl {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 43%;
+  transform-style: preserve-3d;
+}
+
+/* main cards sit at vertical center */
+.carousel-track {
+  top: 38%;
+}
+
+/* reflection sits just below the ground line */
+.carousel-track-refl {
+  top: 62%;
+}
+
+/* ─── card slots ─────────────────────────────────────── */
+.carousel-card,
+.carousel-card-refl {
+  position: absolute;
+  width: 260px;
+  transform-style: preserve-3d;
+}
+
+/* ─── main card ──────────────────────────────────────── */
+.project-card {
+  width: 260px;
+  background: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  border-radius: 18px;
+  padding: 20px;
+  backdrop-filter: blur(12px);
+  transform: translate(-50%, -50%);
+  transition: transform 0.35s ease, box-shadow 0.35s ease;
+}
+
+.project-card:hover {
+  transform: translate(-50%, -50%) scale(1.12);
+  box-shadow: 0 0 45px rgba(168, 85, 247, 0.5);
+}
+
+/* ─── project image inside main card ────────────────── */
+.project-image {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  position: relative;
+  background: rgba(88, 28, 135, 0.2);
+}
+
+.project-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.project-image-placeholder {
+  display: none;               /* shown via JS onError */
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, rgba(88,28,135,0.5), rgba(67,56,202,0.5));
+  font-size: 2rem;
+  font-weight: 700;
+  color: rgba(196, 181, 253, 0.7);
+}
+
+/* ─── reflection card ────────────────────────────────── */
+.project-card-refl {
+  width: 260px;
+  background: rgba(15, 23, 42, 0.35);
+  border: 1px solid rgba(139, 92, 246, 0.12);
+  border-radius: 18px;
+  padding: 20px;
+  backdrop-filter: blur(4px);
+
+  /* flip vertically to mirror the main card */
+  transform: translate(-50%, 0%) scaleY(-1);
+
+  /* fade out downward using a mask */
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, transparent 80%);
+  mask-image:         linear-gradient(to bottom, rgba(0,0,0,0.45) 0%, transparent 80%);
+
+  pointer-events: none;
+}
+
+.project-image-refl {
+  width: 100%;
+  height: 130px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 12px;
+  position: relative;
+  background: rgba(88, 28, 135, 0.2);
+}
+
+.project-image-refl img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ─── ground line between card and reflection ────────── */
+.carousel::after {
+  content: "";
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  height: 1px;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(139, 92, 246, 0.4) 30%,
+    rgba(168, 85, 247, 0.6) 50%,
+    rgba(139, 92, 246, 0.4) 70%,
+    transparent
+  );
+  pointer-events: none;
+}
