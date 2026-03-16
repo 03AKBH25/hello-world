@@ -1,0 +1,17 @@
+.star-bg {
+  background-image: radial-gradient(2px 2px at 20% 30%, #ffffff33, transparent),
+                    radial-gradient(2px 2px at 70% 60%, #ffffff22, transparent),
+                    radial-gradient(1px 1px at 40% 80%, #ffffff33, transparent),
+                    radial-gradient(1px 1px at 90% 20%, #ffffff22, transparent);
+  background-size: 200px 200px;
+  animation: starsMove 60s linear infinite;
+}
+
+@keyframes starsMove {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}

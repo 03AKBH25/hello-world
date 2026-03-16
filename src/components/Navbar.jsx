@@ -9,7 +9,16 @@ export default function Navbar() {
         </h1>
 
         {/* Navigation Links */}
-        <ul className="flex gap-8 text-slate-300 font-medium">
+        <ul className="flex gap-6 text-slate-300 font-medium text-sm md:text-base">
+
+          <li>
+            <a
+              href="#about"
+              className="relative hover:text-purple-400 transition duration-300"
+            >
+              About
+            </a>
+          </li>
 
           <li>
             <a
@@ -31,10 +40,28 @@ export default function Navbar() {
 
           <li>
             <a
-              href="#about"
+              href="#achievements"
               className="relative hover:text-purple-400 transition duration-300"
             >
-              About
+              Achievements
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#certifications"
+              className="relative hover:text-purple-400 transition duration-300"
+            >
+              Certificates
+            </a>
+          </li>
+
+          <li>
+            <a
+              href="#education"
+              className="relative hover:text-purple-400 transition duration-300"
+            >
+              Education
             </a>
           </li>
 

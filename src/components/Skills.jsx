@@ -1,5 +1,5 @@
 import { FaGitAlt, FaGithub, FaDocker, FaAws } from "react-icons/fa";
-import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiKubernetes, SiJavascript } from "react-icons/si";
+import { SiMongodb, SiExpress, SiReact, SiNodedotjs, SiKubernetes, SiJavascript, SiRedis, SiPostgresql, SiTypescript } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 
 export default function Skills() {
@@ -8,10 +8,13 @@ export default function Skills() {
     { icon: <FaGithub />, name: "GitHub" },
     { icon: <VscVscode />, name: "VS Code" },
     { icon: <SiJavascript />, name: "JavaScript" },
+    { icon: <SiTypescript />, name: "TypeScript" },
     { icon: <SiReact />, name: "React" },
     { icon: <SiNodedotjs />, name: "Node.js" },
     { icon: <SiExpress />, name: "Express" },
     { icon: <SiMongodb />, name: "MongoDB" },
+    { icon: <SiPostgresql />, name: "PostgreSQL" },
+    { icon: <SiRedis />, name: "Redis" },
     { icon: <FaAws />, name: "AWS" },
     { icon: <FaDocker />, name: "Docker" },
     { icon: <SiKubernetes />, name: "Kubernetes" },
