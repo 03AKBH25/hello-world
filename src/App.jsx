@@ -14,6 +14,7 @@ function App() {
       <Navbar />
       <Hero />
       <About />
+      <Projects />
       <Skills />
       <Achievements />
       <Certifications />
