@@ -1,3 +1,5 @@
+
+
 const projects = [
   {
     title: "Crimson Streets",
@@ -5,7 +7,7 @@ const projects = [
     tech: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/03AKBH25/CRIMSON-STREETS",
     live: "#",
-    image: "/images/projects/crimson-streets.png"
+    image: ""
   },
   {
     title: "Job Application Tracker",
@@ -13,7 +15,7 @@ const projects = [
     tech: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/03AKBH25/jobby-app-2",
     live: "#",
-    image: "/images/projects/job-tracker.png"
+    image: ""
   },
   {
     title: "Realtime Chat App",
@@ -21,23 +23,23 @@ const projects = [
     tech: ["React", "Node.js", "Socket.io", "MongoDB"],
     github: "https://github.com/yourusername/realtime-chat",
     live: "#",
-    image: "/images/projects/realtime-chat.png"
+    image: ""
   },
   {
-    title: "AI Resume Analyzer",
-    description: "An AI-powered tool that analyzes resumes, suggests improvements and scores them based on job descriptions.",
-    tech: ["React", "Node.js", "OpenAI API", "MongoDB"],
-    github: "https://github.com/yourusername/ai-resume-analyzer",
-    live: "#",
-    image: "/images/projects/ai-resume.png"
+    title: "Crypto Currency Dashboard",
+    description: "A dashboard to track cryptocurrency prices and trends.",
+    tech: ["React", "CoinGecko API"],
+    github: "https://github.com/03AKBH25/crypto-dashboard",
+    live: "https://cryptotracker-35wpp69.public.builtwithrocket.new",
+    image: ""
   },
   {
-    title: "Cloud File Storage",
+    title: "Job Queue System",
     description: "A secure cloud-based file storage system with file uploads, sharing and authentication using JWT.",
     tech: ["React", "Node.js", "AWS S3", "MongoDB"],
     github: "https://github.com/yourusername/cloud-storage",
     live: "#",
-    image: "/images/projects/cloud-storage.png"
+    image: ""
   },
   {
     title: "Task Collaboration Platform",
@@ -45,7 +47,7 @@ const projects = [
     tech: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/yourusername/task-collab",
     live: "#",
-    image: "/images/projects/task-collab.png"
+    image: ""
   }
 ]
 
