@@ -19,7 +19,7 @@ const projects = [
   ],
   github: "https://github.com/03AKBH25/jobby-app-2",
   live: "#",
-  image: "Joker"
+  image: "A"
 },
   {
     title: "Realtime Chat App",
