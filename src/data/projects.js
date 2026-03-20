@@ -17,7 +17,7 @@ const projects = [
     tech: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/03AKBH25/jobby-app-2",
     live: "#",
-    image: "J"
+    image: "Joker"
   },
   {
     title: "Realtime Chat App",
