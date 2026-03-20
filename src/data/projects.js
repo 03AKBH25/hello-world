@@ -1,3 +1,5 @@
+import crimsonSecrets from "../assets/crimson-secret.png";
+import liveCryptoTracker from "../assets/live-crypto-tracker.png";
 
 
 const projects = [
@@ -7,7 +9,7 @@ const projects = [
     tech: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/03AKBH25/CRIMSON-STREETS",
     live: "#",
-    image: ""
+    image: crimsonSecrets
   },
   {
     title: "Job Application Tracker",
@@ -15,7 +17,7 @@ const projects = [
     tech: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/03AKBH25/jobby-app-2",
     live: "#",
-    image: ""
+    image: "J"
   },
   {
     title: "Realtime Chat App",
@@ -23,7 +25,7 @@ const projects = [
     tech: ["React", "Node.js", "Socket.io", "MongoDB"],
     github: "https://github.com/yourusername/realtime-chat",
     live: "#",
-    image: ""
+    image: "R"
   },
   {
     title: "Crypto Currency Dashboard",
@@ -31,7 +33,7 @@ const projects = [
     tech: ["React", "CoinGecko API"],
     github: "https://github.com/03AKBH25/crypto-dashboard",
     live: "https://cryptotracker-35wpp69.public.builtwithrocket.new",
-    image: ""
+    image: liveCryptoTracker
   },
   {
     title: "Job Queue System",
@@ -39,7 +41,7 @@ const projects = [
     tech: ["React", "Node.js", "AWS S3", "MongoDB"],
     github: "https://github.com/yourusername/cloud-storage",
     live: "#",
-    image: ""
+    image: "J"
   },
   {
     title: "Task Collaboration Platform",
@@ -47,7 +49,7 @@ const projects = [
     tech: ["React", "Node.js", "Express", "MongoDB"],
     github: "https://github.com/yourusername/task-collab",
     live: "#",
-    image: ""
+    image: "T"
   }
 ]
 
