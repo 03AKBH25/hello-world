@@ -15,7 +15,7 @@ const projects = [
   title: "AI-Powered Real-Time Decision Support Assistant",
   description: "A job tracking platform integrated with AI to analyze interview responses, generate contextual follow-up questions, and assist decision-making using retrieval-augmented generation (RAG).",
   tech: [
-    "React", "Node.js", "Express", "MongoDB", "LangChain", "OpenAI API"
+    "Kafka", "ElevenLab", "Express", "FAISS", "LangChain", "OpenAI API"
   ],
   github: "https://github.com/03AKBH25/jobby-app-2",
   live: "#",
