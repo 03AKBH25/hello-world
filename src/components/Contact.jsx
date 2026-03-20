@@ -170,7 +170,7 @@ export default function Contact() {
         <div className="text-center mt-20">
 
           <a
-            href="https://drive.google.com/uc?export=download&id=1D61itc2eoOpQeQ18MFjVRasEB490um-E"
+            href="https://drive.google.com/uc?export=download&id=11epPkfBJjZCJmNtks8o2Ke-LUpI_PAjg"
             className="inline-block bg-purple-600 hover:bg-purple-700 text-white px-8 py-3 rounded-full transition"
           >
             Download CV
